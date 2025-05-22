@@ -1,0 +1,140 @@
+
+
+:root{
+
+    /* Colors */
+
+    /* Primary */
+
+    --Purple-50: hsl(260, 100%, 95%);
+    --Purple-300: hsl(264, 82%, 80%);
+    --Purple-500: hsl(263, 55%, 52%);
+
+    /* Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Grey-100: hsl(214, 17%, 92%);
+    --Grey-200: hsl(0, 0%, 81%);
+    --Grey-400: hsl(224, 10%, 45%);
+    --Grey-500: hsl(217, 19%, 35%);
+    --Dark-blue: hsl(219, 29%, 14%);
+    --Black: hsl(0, 0%, 7%);
+
+    /* Typography */
+
+    --font-family: "Barlow Semi Condensed", sans-serif;
+    --font-style:normal;
+
+    --fw-500:500;
+    --fw-600:600;
+
+    --barlow-semi-condensed-medium:var(--font-style) var(--fw-500) 0.833rem/1.5 var(--font-family); /* font size 13px --> for p and name*/
+    --barlow-semi-condensed-semibold:var(--font-style) var(--fw-600) 1.3rem/1.25 var(--font-family); /* font size 23px*/
+    --title:var(--font-style) var(--fw-500) 0.694rem/1.5 var(--font-family); /* 11px --> for title under  the name */
+    
+}
+
+/* Global styles */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: var(--Grey-100);
+    font-family: var(--font-family);
+}
+
+section{
+    width:80%;
+    margin: 5rem auto;
+
+    display: grid;
+    gap: 2rem;
+
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/* Responsive style for image */
+
+/* for screen size 375px quotation not displayed*/
+.responsive-quotation{
+    display: none;
+}
+
+
+.card{  
+    border-radius: 0.5rem;
+    box-shadow: 1rem 2rem 1.5rem rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    /* To be removed */
+}
+
+.card__author{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author__image{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+/* Image border */
+.border{
+    border: 2px solid var(--Purple-300);
+}
+
+/* Font styles */
+
+.medium{
+    font:var(--barlow-semi-condensed-medium);
+    opacity: 0.7;
+}
+
+.semi-bold{
+    font:var(--barlow-semi-condensed-semibold);
+    opacity: 0.8;
+    margin-bottom: .8rem;
+}  
+
+.title{
+    font: var(--title);
+    display: block;
+}
+
+/* Card colors */
+
+.white{
+    background-color: var(--White);
+    color: var(--Dark-blue);
+}
+.dark-blue{
+    background-color: var(--Dark-blue);
+    color: var(--White);
+}
+
+.grey-500{
+    background-color: var(--Grey-500);
+    color: var(--White);
+}
+
+.purple-500{
+    background-color: var(--Purple-500);
+    color: var(--White);
+}
