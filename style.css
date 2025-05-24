@@ -68,8 +68,8 @@ img{
 }
 
 .testimonial{
-    width:min(95%,75rem);
-    margin: 5rem;
+    width:min(90%,72rem);
+    margin: 3rem 2rem;
     display: grid;
     gap: 2rem;
 }
@@ -153,14 +153,8 @@ img{
     }
 }
 
+
 @media (min-width: 1200px) {
-    .testimonial{
-
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (min-width: 1440px) {
     .testimonial{
         grid-template-columns: repeat(4, 1fr);
     }
