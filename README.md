@@ -47,9 +47,9 @@ Users should be able to:
 ### What I learned
 
 I really enjoyed while doing this project. Because seeing the result after the thought process is made me happy. 
-I did not know anything couple of months ago. And and repetition and process satisfy.
+I did not know anything couple of months ago. And repetition and process satisfy.
 
-Here in this project I had a chance to use grid property while placing the cards: grid-template-areas and grid-template-columns/spans
+In this project I had a chance to use grid property while placing the cards: grid-template-areas and grid-template-columns/spans
 
 To see how, may see the code snippet below:
 
